@@ -3,12 +3,18 @@ content = "You are an expert software analyst."
 
 [user]
 content = """
-Here is the content of a file from a software project:
+Here is the content of a file called {relative_path} from the following
+directory tree:
 
-{content}
+{tree_structure}
 
 What APIs are used from the standard library? What APIs towards the operating 
 system are used? Are these the modernized APIs or older ones that can or should 
 be replaced with newer counterparts?
+
+Here the content of the file:
+
+{content}
+
 """
 

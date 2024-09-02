@@ -46,14 +46,16 @@ def load_prompt(analyzer_dir, stage):
     return system_prompt, user_prompt
 
 class ProjectAnalyzer:
-    def __init__(self, project_path):
+    def __init__(self, project_path, model):
         print(f"Analyze project {project_path}")
-        print(f"Model {MODEL}")
+        print(f"Model {model}")
         self.project_path = project_path
         self.project_name = os.path.basename(os.path.normpath(project_path))
         self.output_dir = f"results-{self.project_name}"
         self.ignore_patterns = ['.git', '.gitignore']  # Always ignore the .git directory
         self.analyzers = self.discover_analyzers()
+        self.model = model
+        self.client = OpenAI()
 
     def setup_output_directory(self):
         if os.path.exists(self.output_dir):
@@ -137,7 +139,7 @@ class ProjectAnalyzer:
         user_prompt = user_prompt.replace("{content}", content).replace("{tree_structure}", tree_structure).replace("{relative_path}", relative_path)
 
         response = chat_completion_create(
-            model=MODEL,
+            model=self.model,
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt}
@@ -214,7 +216,7 @@ class ProjectAnalyzer:
             user_prompt = user_prompt.replace("{tree_structure}", tree_structure)
 
             response = chat_completion_create(
-                model=MODEL,
+                model=self.model,
                 messages=[
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_prompt}
@@ -258,7 +260,7 @@ class ProjectAnalyzer:
             user_prompt = user_prompt.replace("{content}", combined_content).replace("{tree_structure}", tree_structure)
 
             response = chat_completion_create(
-                model=MODEL,
+                model=self.model,
                 messages=[
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_prompt}
@@ -284,12 +286,18 @@ class ProjectAnalyzer:
 def parse_arguments():
     parser = argparse.ArgumentParser(description="Analyze a project directory.")
     parser.add_argument("project_path", help="Path to the project directory.")
+    parser.add_argument(
+                "--model",
+                choices=["gpt-4", "gpt-4-turbo", "gpt-3.5-turbo", "gpt-4o", "gpt-4o-mini"],
+                default="gpt-4o",
+                help="Choose the OpenAI model to use for analysis."
+    )
     return parser.parse_args()
 
 
 def main():
     args = parse_arguments()
-    analyzer = ProjectAnalyzer(args.project_path)
+    analyzer = ProjectAnalyzer(args.project_path, args.model)
     analyzer.analyze()
 
 
