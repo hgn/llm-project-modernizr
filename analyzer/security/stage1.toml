@@ -1,0 +1,13 @@
+[system]
+content = "You are an expert software analyst."
+
+[user]
+content = """
+Here is the content of a file from a software project:
+
+{content}
+
+Please analyze the security aspects of this file. Identify any potential vulnerabilities, 
+suggest improvements, and provide a security rating between 0 and 10 (best).
+"""
+

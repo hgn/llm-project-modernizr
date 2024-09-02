@@ -1,0 +1,18 @@
+[system]
+content = "You are an expert software analyst."
+
+[user]
+content = """
+Here is the content of a file from a software project:
+
+{content}
+
+Please analyze the purpose of this file, assess the quality of the source code, 
+and provide relevant insights into its role within the project. Include any 
+recommendations for improvement if necessary. 
+
+Please also rate at the end of the report between 0 and 10 (best) for the 
+following characteristics: Code Quality, Documentation, Error Handling, 
+Performance, Security, Maintainability, Compatibility, Innovation / Modern Constructs.
+"""
+

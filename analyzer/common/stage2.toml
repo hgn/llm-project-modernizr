@@ -1,0 +1,11 @@
+[system]
+content = "You are an expert software analyst."
+
+[user]
+content = """
+Please provide a high-level suggestion about the overall purpose of the code, 
+the technical quality, and the choice of programming language and technology stack. 
+How can the code be optimized or modernized? Additionally, please estimate the cost 
+of modernization. If developed newly, what programming languages should be used?
+"""
+

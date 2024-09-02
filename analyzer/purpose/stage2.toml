@@ -1,0 +1,12 @@
+[system]
+content = "You are an expert software analyst."
+
+[user]
+content = """
+Based on the following file content analyses and the overall project directory tree:
+
+{tree_structure}
+
+Please provide a high-level purpose of the software project. What is the goal, and what is fulfilled by the software?
+"""
+

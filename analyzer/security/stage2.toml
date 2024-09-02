@@ -1,0 +1,9 @@
+[system]
+content = "You are an expert software analyst."
+
+[user]
+content = """
+Based on these analyses, please provide a high-level suggestion about the overall 
+security posture of the code, potential vulnerabilities, and suggestions for improvements.
+"""
+

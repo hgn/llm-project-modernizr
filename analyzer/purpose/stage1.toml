@@ -1,0 +1,17 @@
+[system]
+content = "You are an expert software analyst and highly qualified programmer."
+
+[user]
+content = """
+Here is the content of a file called {relative_path} from the following 
+directory tree:
+
+{tree_structure}
+
+Please analyze the purpose of the following content. What functionality is 
+fulfilled by each function? Provide also a high-level summary of the functionality.
+Here is the content:
+
+{content}
+"""
+

@@ -1,0 +1,177 @@
+[suffixes]
+suffixes = [
+    # C/C++ and related
+    ".c",    # C source file
+    ".h",    # C/C++ header file
+    ".cpp",  # C++ source file
+    ".hpp",  # C++ header file
+    ".cc",   # C++ source file
+    ".cxx",  # C++ source file
+    ".c++",  # C++ source file
+    ".hh",   # C++ header file
+    ".hxx",  # C++ header file
+    ".h++",  # C++ header file
+
+    # Java
+    ".java",  # Java source file
+
+    # Python
+    ".py",    # Python source file
+
+    # Ruby
+    ".rb",    # Ruby source file
+
+    # JavaScript/TypeScript
+    ".js",    # JavaScript source file
+    ".jsx",   # JavaScript (React) source file
+    ".ts",    # TypeScript source file
+    ".tsx",   # TypeScript (React) source file
+
+    # HTML/CSS
+    ".html",  # HTML file
+    ".htm",   # HTML file
+    ".css",   # CSS file
+    ".scss",  # Sass (SCSS) file
+    ".sass",  # Sass file
+    ".less",  # Less file
+
+    # PHP
+    ".php",   # PHP source file
+
+    # Go
+    ".go",    # Go source file
+
+    # Rust
+    ".rs",    # Rust source file
+
+    # Swift
+    ".swift", # Swift source file
+
+    # Kotlin
+    ".kt",    # Kotlin source file
+    ".kts",   # Kotlin script file
+
+    # Lua
+    ".lua",   # Lua source file
+
+    # Perl
+    ".pl",    # Perl source file
+    ".pm",    # Perl module file
+
+    # R
+    ".r",     # R script file
+
+    # Shell Scripts
+    ".sh",    # Shell script
+    ".bash",  # Bash script
+    ".zsh",   # Zsh script
+    ".fish",  # Fish shell script
+
+    # Batch/Command Files (Windows)
+    ".bat",   # Batch file (Windows)
+    ".cmd",   # Command script (Windows)
+
+    # PowerShell
+    ".ps1",   # PowerShell script
+
+    # SQL
+    ".sql",   # SQL file
+
+    # Markup Languages
+    ".xml",   # XML file
+    ".json",  # JSON file
+    ".yaml",  # YAML file
+    ".yml",   # YAML file
+
+    # Configuration Files
+    ".ini",   # INI config file
+    ".toml",  # TOML config file
+
+    # Documentation
+    ".rst",   # reStructuredText
+
+    # HDL (Hardware Description Languages)
+    ".v",     # Verilog
+    ".sv",    # SystemVerilog
+    ".vhdl",  # VHDL
+
+    # Assembly Language
+    ".asm",   # Assembly
+    ".s",     # Assembly
+
+    # Scala
+    ".scala", # Scala source file
+
+    # Clojure
+    ".clj",   # Clojure source file
+    ".cljs",  # ClojureScript source file
+
+    # Erlang
+    ".erl",   # Erlang source file
+
+    # Elixir
+    ".ex",    # Elixir source file
+    ".exs",   # Elixir script file
+
+    # Haskell
+    ".hs",    # Haskell source file
+    ".lhs",   # Literate Haskell source file
+
+    # OCaml
+    ".ml",    # OCaml source file
+    ".mli",   # OCaml interface file
+
+    # F#
+    ".fs",    # F# source file
+    ".fsi",   # F# interface file
+    ".fsx",   # F# script file
+
+    # C#
+    ".cs",    # C# source file
+    ".csx",   # C# script file
+
+    # Visual Basic
+    ".vb",    # Visual Basic source file
+
+    # Julia
+    ".jl",    # Julia source file
+
+    # MATLAB/Objective-C
+    ".m",     # MATLAB/Objective-C source file
+    ".mm",    # Objective-C++ source file
+
+    # Fortran
+    ".f",     # Fortran source file
+    ".f90",   # Fortran source file
+    ".f95",   # Fortran source file
+    ".for",   # Fortran source file
+    ".f77",   # Fortran source file
+
+    # Ada
+    ".ada",   # Ada source file
+    ".adb",   # Ada body file
+    ".ads",   # Ada specification file
+
+    # Prolog
+    ".pro",   # Prolog source file
+
+    # Lisp
+    ".lisp",  # Lisp source file
+    ".cl",    # Common Lisp source file
+    ".el",    # Emacs Lisp source file
+
+    # Scheme/Racket
+    ".scm",   # Scheme source file
+    ".ss",    # Scheme source file
+    ".rkt",   # Racket source file
+
+    # D
+    ".d",     # D source file
+
+    # Nim
+    ".nim",   # Nim source file
+
+    # V (not to be confused with Verilog)
+    ".v"      # V source file
+]
+
